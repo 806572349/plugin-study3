@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yb.user.entity.YbUserPointsMapper" >
+  <resultMap id="BaseResultMap" type="com.yb.user.model.YbUserPoints" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="uid" property="uid" jdbcType="INTEGER" />
+    <result column="current_points" property="currentPoints" jdbcType="INTEGER" />
+    <result column="event_points" property="eventPoints" jdbcType="INTEGER" />
+    <result column="event_id" property="eventId" jdbcType="INTEGER" />
+    <result column="event_sign" property="eventSign" jdbcType="INTEGER" />
+    <result column="event_type" property="eventType" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="event_desc" property="eventDesc" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

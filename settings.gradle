@@ -1,0 +1,5 @@
+rootProject.name = 'plugin-study3'
+include 'plugin'
+include 'sample'
+include 'testtwo'
+

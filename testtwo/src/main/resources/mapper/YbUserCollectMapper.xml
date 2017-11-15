@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yb.user.entity.YbUserCollectMapper" >
+  <resultMap id="BaseResultMap" type="com.yb.user.model.YbUserCollect" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="uid" property="uid" jdbcType="INTEGER" />
+    <result column="type" property="type" jdbcType="VARCHAR" />
+    <result column="type_obj_id" property="typeObjId" jdbcType="INTEGER" />
+    <result column="type_obj_name" property="typeObjName" jdbcType="VARCHAR" />
+    <result column="type_obj_desc" property="typeObjDesc" jdbcType="VARCHAR" />
+    <result column="type_obj_icon" property="typeObjIcon" jdbcType="VARCHAR" />
+    <result column="type_obj_url" property="typeObjUrl" jdbcType="VARCHAR" />
+    <result column="type_obj_property" property="typeObjProperty" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="clicks" property="clicks" jdbcType="INTEGER" />
+    <result column="last_time" property="lastTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+</mapper>

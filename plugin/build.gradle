@@ -1,0 +1,23 @@
+
+apply plugin: 'groovy'
+apply plugin: 'maven'
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+//上传地址
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: uri('../repo'))
+        }
+    }
+}
+group='com.mytainor.plugin'
+version='1.0.0'
+//gradle uploadArchives

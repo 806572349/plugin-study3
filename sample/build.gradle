@@ -1,0 +1,27 @@
+
+
+buildscript {
+    repositories {
+        maven{
+            url uri('../repo')
+        }
+
+    }
+    dependencies {
+        classpath group:'com.mytainor.plugin',
+                name:'mybatior-plugin',
+                version:'1.0.0'
+    }
+
+}
+apply plugin:'com.micky.mybatior'
+
+mybatisGenerator{
+    configFile='src/main/resources/generatorConfig.xml'
+
+}
+//gradle mybatisTask
+dependencies{
+//    compile 'org.mybatis.generator:mybatis-generator-core:1.3.5'
+
+}
